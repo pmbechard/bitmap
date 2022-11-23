@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Pixels</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Binary Pixels</h1>
+    <div id="grid-settings">
+      <input type="number" id="grid-size-input" min="2" max="16" value="4" />
+      <button id="change-size-btn">Change Grid Size</button>
+      <input type="color" name="color" id="color" />
+    </div>
+    <h4 id="grid-size-heading">Current Grid Size: 4x4</h4>
+    <textarea
+      name="textarea"
+      id="textarea"
+      cols="4"
+      rows="4"
+      maxlength="19"
+      minlength="19"
+      placeholder="Put your 0s and 1s here to create an image!"
+      pattern="/^[0-1]+$/"
+    ></textarea>
+    <button id="generate-btn" disabled="true">Generate Image</button>
+    <div id="output"></div>
+    <footer><small>Peyton Bechard &copy; 2022</small></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
